@@ -38,7 +38,11 @@ public class KakaoSignUpActivity extends Activity {
             public void onSuccess(MeV2Response result) {
                 Logger.d("user id : " + result.getId());
                 Logger.d("email: " + result.getKakaoAccount().getEmail());
+                Log.d("result.toString() : " , result.toString());
+                Log.d("result id : " , String.valueOf(result.getId()));
+
                 redirectMainActivity();
+                //909830878
             }
         });
     }

@@ -2,9 +2,23 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="primaryPrimaryLight">#f7feff</color>
+
     <color name="colorAccent">#FF4081</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
+    <color name="blue1">#f7feff</color>
+    <color name="blue2">#b4f3fc</color>
+    <color name="blue3">#19d5f1</color>
+    <color name="blue4">#1c82fa</color>
+
+    <color name="yellow1">#ffdb20</color>
+    <color name="yellow2">#fdb700</color>
+    <color name="yellow3">#f5a623</color>
+
+    <color name="redLight">#ff7070</color>
+
+    <color name="greenLight">#00d095</color>
 </resources>

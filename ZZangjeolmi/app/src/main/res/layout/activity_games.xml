@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="gamesActivity"
             type="com.god.taeiim.zzangjeolmi.Activity.GamesActivity" />
