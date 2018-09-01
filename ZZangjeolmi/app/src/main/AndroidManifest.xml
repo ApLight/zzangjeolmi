@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.KakaoSignUpActivity"/>
+        <activity android:name=".Activity.GamesActivity"/>
+        <activity android:name=".Activity.QuizGameActivity"/>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
