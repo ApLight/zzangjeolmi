@@ -1,4 +1,4 @@
-package com.taeiim.myapplication;
+package com.god.taeiim.zzangjeolmi;
 
 import org.junit.Test;
 

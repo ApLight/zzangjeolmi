@@ -1,4 +1,4 @@
-package com.taeiim.myapplication;
+package com.god.taeiim.zzangjeolmi;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.taeiim.myapplication", appContext.getPackageName());
+        assertEquals("com.god.taeiim.zzangjeolmi", appContext.getPackageName());
     }
 }
