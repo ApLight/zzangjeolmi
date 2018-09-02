@@ -82,14 +82,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:enabled="false"
-                    android:button="@drawable/radio_button_star"/>
+                    android:button="@drawable/radio_button_star"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"/>
                 <android.support.v7.widget.AppCompatRadioButton
                     android:id="@+id/star3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:enabled="false"
-                    android:button="@drawable/radio_button_star"/>
+                    android:button="@drawable/radio_button_star"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
             </LinearLayout>
         </LinearLayout>
 

@@ -70,7 +70,7 @@ public class GamesActivity extends AppCompatActivity {
     private void setUpRecyclerView() {
         layoutManager = new LinearLayoutManager(getApplicationContext());
         binding.gamelistRecyclerview.setLayoutManager(layoutManager);
-        adapter = new GamesRecyclerAdapter(gamesItemArrayList);
+        adapter = new GamesRecyclerAdapter(getApplicationContext(),gamesItemArrayList);
         binding.gamelistRecyclerview.setAdapter(adapter);
 
     }
