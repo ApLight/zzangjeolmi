@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@color/blue2">
+                android:background="@drawable/img_sea">
 
                 <Button
                     android:id="@+id/btn_intent_game"
@@ -66,11 +66,11 @@
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/ic_polarbear"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/img_character"/>
+            android:id="@+id/gif_seolgi"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -116,7 +116,7 @@
                     android:id="@+id/maxExpTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="/ 50"
+                    android:text="/ 100"
                     android:textColor="#474747"
                     android:textStyle="bold"
                     android:textSize="16dp"

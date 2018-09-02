@@ -9,12 +9,6 @@ import java.util.ArrayList;
 public class UserInfo {
     private int currentLevel;
     private int currentExp;
-    private int currentLevelMaxExp;
-    ArrayList<Integer> maxExpArrayList;
-
-    public UserInfo(){
-        setUpCurrentLevelMaxExp();
-    }
 
     public int getCurrentLevel() {
         return currentLevel;
@@ -32,17 +26,5 @@ public class UserInfo {
         this.currentExp = currentExp;
     }
 
-    public int getCurrentLevelMaxExp() {
-        return maxExpArrayList.get(getCurrentLevel());
-    }
 
-    private void setUpCurrentLevelMaxExp(){
-        int num = 50;
-        maxExpArrayList = new ArrayList<>();
-        maxExpArrayList.add(0);
-        for(int i=0;i<100;i++){
-            maxExpArrayList.add(num);
-            num+=5;
-        }
-    }
 }

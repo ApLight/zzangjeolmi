@@ -34,9 +34,16 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="220dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_seolgi_login"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_seolgi_korean"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="80dp"/>
+    <ImageView
+        android:id="@+id/gif_login_seolgi"
+        android:layout_width="280dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerCrop"/>
 </RelativeLayout>

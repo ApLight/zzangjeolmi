@@ -10,4 +10,6 @@ public class APIUrl {
     public static final String QUIZZES_URL = "quizzes/";
 
     public static final String LOGIN_URL = "login/";
+    public static final String UPDATE_EXP = "feed/";
+
 }

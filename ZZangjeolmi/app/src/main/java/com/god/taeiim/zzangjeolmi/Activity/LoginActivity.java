@@ -12,6 +12,7 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.bumptech.glide.Glide;
 import com.god.taeiim.zzangjeolmi.R;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
@@ -33,6 +34,8 @@ public class LoginActivity extends AppCompatActivity{
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Glide.with(this).load(R.drawable.login_seolgi).into((ImageView)findViewById(R.id.gif_login_seolgi));
 
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);

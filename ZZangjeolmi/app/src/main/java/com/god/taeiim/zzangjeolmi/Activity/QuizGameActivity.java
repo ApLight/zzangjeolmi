@@ -1,5 +1,6 @@
 package com.god.taeiim.zzangjeolmi.Activity;
 
+import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -93,6 +94,31 @@ public class QuizGameActivity extends AppCompatActivity {
         binding.completeLayout.setVisibility(View.VISIBLE);
 
         binding.btnCompleteOk.setOnClickListener(v->finish());
+
+        Retrofit builder = new Retrofit.Builder()
+                .baseUrl(APIUrl.API_BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        RestAPI restAPI = builder.create(RestAPI.class);
+
+        SharedPreferences pref = getSharedPreferences("userID", MODE_PRIVATE);
+
+        Call<JsonObject> call = restAPI.updateExp(30,pref.getLong("userID", 0));
+        call.enqueue(new Callback<JsonObject>() {
+            @Override
+            public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
+
+                if (response.code() == 200) {
+                    Log.d("response----", response.body().toString());
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<JsonObject> call, Throwable t) {
+                Log.d("ERROR! onFailure!", t.toString());
+            }
+        });
     }
 
     private void setUpAnswerData(){

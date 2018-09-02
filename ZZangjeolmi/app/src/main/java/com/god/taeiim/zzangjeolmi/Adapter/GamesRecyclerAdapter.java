@@ -4,8 +4,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.god.taeiim.zzangjeolmi.Model.GamesItem;
 import com.god.taeiim.zzangjeolmi.R;
 
 import java.util.ArrayList;
@@ -15,9 +17,9 @@ import java.util.ArrayList;
  */
 
 public class GamesRecyclerAdapter extends RecyclerView.Adapter<GamesRecyclerAdapter.ViewHolder>{
-    ArrayList<String> gamesItem = new ArrayList<>();
+    ArrayList<GamesItem> gamesItem = new ArrayList<>();
 
-    public GamesRecyclerAdapter(ArrayList<String> gamesItem){
+    public GamesRecyclerAdapter(ArrayList<GamesItem> gamesItem){
         this.gamesItem = gamesItem;
     }
 
@@ -30,7 +32,8 @@ public class GamesRecyclerAdapter extends RecyclerView.Adapter<GamesRecyclerAdap
 
     @Override
     public void onBindViewHolder(GamesRecyclerAdapter.ViewHolder holder, int position) {
-        holder.titleTv.setText(gamesItem.get(position));
+        holder.titleTv.setText(gamesItem.get(position).getGameName());
+        holder.imgView.setImageResource(gamesItem.get(position).getImg());
     }
 
     @Override
@@ -40,10 +43,12 @@ public class GamesRecyclerAdapter extends RecyclerView.Adapter<GamesRecyclerAdap
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView titleTv;
+        ImageView imgView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             titleTv = (TextView) itemView.findViewById(R.id.gamelist_titleTv);
+            imgView = (ImageView) itemView.findViewById(R.id.gamelist_imgView);
         }
     }
 }
